@@ -9,7 +9,6 @@ export default async (req: Request, res: Response) => {
       ? res.status(400).json(response)
       : res.status(200).json(response);
   } catch (error: any) {
-    console.log(error);
     return res.status(500).json({ message: error.message });
   }
 };

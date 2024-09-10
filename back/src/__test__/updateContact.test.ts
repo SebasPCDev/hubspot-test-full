@@ -15,8 +15,6 @@ describe("PATCH Actualizar un cotacto", () => {
     const randomContact =
       contacts.results[Math.floor(Math.random() * contacts.results.length)];
 
-    console.log(Math.floor(Math.random() * contacts.results.length - 1));
-
     const response = await request(app)
       .patch(`/contacts/${randomContact.id}`)
       .send(contact);

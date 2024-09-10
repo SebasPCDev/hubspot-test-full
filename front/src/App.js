@@ -73,12 +73,10 @@ function App() {
 
   const handleShowContacts = async () => {
     const data = await getAllContacts();
-    console.log(data);
+
     setContacts(data);
     setShowContacts(true);
   };
-
-  console.log(formData);
 
   return (
     <div className="min-h-screen bg-gray-100 flex items-center justify-evenly">
